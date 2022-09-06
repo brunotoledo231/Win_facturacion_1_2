@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSListado" targetNamespace="http://tempuri.org/DSListado.xsd" xmlns:mstns="http://tempuri.org/DSListado.xsd" xmlns="http://tempuri.org/DSListado.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSListado" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DSListado" msprop:Generator_DataSetName="DSListado">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Total_x0020_Facturado_x0020_x_x0020_Producto_x0020_x_x0020_Mes" msprop:Generator_RowEvHandlerName="Total_Facturado_x_Producto_x_MesRowChangeEventHandler" msprop:Generator_RowDeletedName="Total_Facturado_x_Producto_x_MesRowDeleted" msprop:Generator_RowDeletingName="Total_Facturado_x_Producto_x_MesRowDeleting" msprop:Generator_RowEvArgName="Total_Facturado_x_Producto_x_MesRowChangeEvent" msprop:Generator_TablePropName="Total_Facturado_x_Producto_x_Mes" msprop:Generator_RowChangedName="Total_Facturado_x_Producto_x_MesRowChanged" msprop:Generator_RowChangingName="Total_Facturado_x_Producto_x_MesRowChanging" msprop:Generator_TableClassName="Total_Facturado_x_Producto_x_MesDataTable" msprop:Generator_RowClassName="Total_Facturado_x_Producto_x_MesRow" msprop:Generator_TableVarName="tableTotal_Facturado_x_Producto_x_Mes" msprop:Generator_UserTableName="Total Facturado x Producto x Mes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre_x0020_Articulo" msprop:Generator_ColumnPropNameInRow="Nombre_Articulo" msprop:Generator_ColumnPropNameInTable="Nombre_ArticuloColumn" msprop:Generator_ColumnVarNameInTable="columnNombre_Articulo" msprop:Generator_UserColumnName="Nombre Articulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_x0020_" msprop:Generator_ColumnPropNameInRow="Fecha_" msprop:Generator_ColumnPropNameInTable="Fecha_Column" msprop:Generator_ColumnVarNameInTable="columnFecha_" msprop:Generator_UserColumnName="Fecha " type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Total_x0020_Facturado" msprop:Generator_ColumnPropNameInRow="Total_Facturado" msprop:Generator_ColumnPropNameInTable="Total_FacturadoColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Facturado" msprop:Generator_UserColumnName="Total Facturado" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -30,6 +30,7 @@ namespace Ejercicio_1._2_Facturacion
             CargarCombos();          
             ProximaFactura();
             VolverACero(true);
+            this.reportViewer1.RefreshReport();
         }
 
         private void ProximaFactura()
