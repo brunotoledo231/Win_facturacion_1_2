@@ -1,0 +1,22 @@
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\bin\Debug\Ejercicio_1.2_Facturacion.exe.config
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\bin\Debug\Ejercicio_1.2_Facturacion.exe
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\bin\Debug\Ejercicio_1.2_Facturacion.pdb
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.csproj.AssemblyReference.cache
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.csproj.SuggestedBindingRedirects.cache
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1._2_Facturacion.Properties.Resources.resources
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.csproj.GenerateResource.cache
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.csproj.CoreCompileInputs.cache
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.exe
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.pdb
+D:\TUP\04_2do Cuatrimestre\03_Programación II\02_Prácticos\Problema1.2_Facturación\WinFacturacion-main\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1._2_Facturacion.FrmFactura.resources
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\bin\Debug\Ejercicio_1.2_Facturacion.exe.config
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\bin\Debug\Ejercicio_1.2_Facturacion.exe
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\bin\Debug\Ejercicio_1.2_Facturacion.pdb
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.csproj.AssemblyReference.cache
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.csproj.SuggestedBindingRedirects.cache
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1._2_Facturacion.FrmFactura.resources
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1._2_Facturacion.Properties.Resources.resources
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.csproj.GenerateResource.cache
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.csproj.CoreCompileInputs.cache
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.exe
+D:\Documentos\vruno\TECNICATURA EN PROGRAMACION UTN\SEGUNDO CUATRIMESTRE_2022\REPOS\Problema1.2\Ejercicio_1.2_Facturacion\obj\Debug\Ejercicio_1.2_Facturacion.pdb

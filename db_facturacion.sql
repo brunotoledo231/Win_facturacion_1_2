@@ -1,0 +1,165 @@
+create DATABASE PROBLEMA_1_2_FACTURACION
+GO
+USE PROBLEMA_1_2_FACTURACION
+GO
+SET DATEFORMAT DMY
+
+CREATE TABLE FORMAS_PAGO
+(
+ID_FORMAPAGO INT identity (1,1),
+FORMAPAGO VARCHAR (50),
+
+CONSTRAINT PK_FORMAS_PAGO PRIMARY KEY (ID_FORMAPAGO)
+)
+
+CREATE TABLE ARTICULOS
+(
+ID_ARTICULO INT IDENTITY (1,1),
+DESCRIPCION VARCHAR (50),
+PRE_UNITARIO DECIMAL (10,2)
+
+CONSTRAINT PK_ARTICULOS PRIMARY KEY (ID_ARTICULO)
+)
+
+
+
+CREATE TABLE FACTURAS
+(
+NRO_FACTURA INT IDENTITY (1,1),
+FECHA DATETIME,
+ID_FORMAPAGO INT,
+CLIENTE VARCHAR (50)
+
+CONSTRAINT PK_FACTURA PRIMARY KEY (NRO_FACTURA),
+CONSTRAINT FK_FACTURA_FORMAS_PAGO FOREIGN KEY (ID_FORMAPAGO)
+REFERENCES FORMAS_PAGO (ID_FORMAPAGO)
+)
+
+CREATE TABLE DETALLES_FACTURA
+(
+ID_DETALLE_FACTURA INT IDENTITY (1,1),
+NRO_FACTURA INT,
+ID_ARTICULO INT,
+CANTIDAD INT
+
+CONSTRAINT PK_DETALLES_FACTURA PRIMARY KEY (ID_DETALLE_FACTURA),
+CONSTRAINT FK_DETALLES_FACTURA_FACTURAS FOREIGN KEY (NRO_FACTURA)
+REFERENCES FACTURAS (NRO_FACTURA),
+CONSTRAINT FK_DETALLES_FACTURA_ARTICULOS FOREIGN KEY (ID_ARTICULO)
+REFERENCES ARTICULOS (ID_ARTICULO)
+)
+
+insert into FORMAS_PAGO (formaPago)
+values ('Efectivo')
+insert into FORMAS_PAGO ( formaPago)
+values ('Credito')
+insert into FORMAS_PAGO (formaPago)
+values ('Debito')
+insert into FORMAS_PAGO ( formaPago)
+values ('Cheque')
+insert into FORMAS_PAGO ( formaPago)
+values ('Mercado Pago')
+
+insert into ARTICULOS (descripcion, pre_unitario)
+values ('Arroz',150)
+insert into ARTICULOS (descripcion, pre_unitario)
+values ('Fideos',150)
+insert into ARTICULOS (descripcion, pre_unitario)
+values ('Lentejas',150)
+insert into ARTICULOS (descripcion, pre_unitario)
+values ('YerbaMate',150)
+insert into ARTICULOS (descripcion, pre_unitario)
+values ('Vino',150)
+insert into ARTICULOS (descripcion, pre_unitario)
+values ('Fernet',150)
+insert into ARTICULOS (descripcion, pre_unitario)
+values ('Sal',150)
+insert into ARTICULOS (descripcion, pre_unitario)
+values ('Aceite',150)
+
+insert into FACTURAS(fecha,id_formaPago,cliente)
+values ('5/6/2021',1,'Toledo Bruno')
+insert into FACTURAS(fecha,id_formaPago,cliente)
+values ('15/12/2022',2,'Nicolas Mazzaglia')
+insert into FACTURAS(fecha,id_formaPago,cliente)
+values ('8/9/2021',3,'Virginia Maglier')
+insert into FACTURAS(fecha,id_formaPago,cliente)
+values ('2/1/2020',2,'Catalina Pissoni')
+insert into FACTURAS(fecha,id_formaPago,cliente)
+values ('5/6/2019',1,'Agustina Gallardo')
+
+insert into DETALLES_FACTURA(nro_factura,id_articulo,cantidad)
+values(1,1,3)
+insert into DETALLES_FACTURA(nro_factura,id_articulo,cantidad)
+values(1,2,4)
+insert into DETALLES_FACTURA(nro_factura,id_articulo,cantidad)
+values(4,4,5)
+insert into DETALLES_FACTURA(nro_factura,id_articulo,cantidad)
+values(5,5,10)
+insert into DETALLES_FACTURA(nro_factura,id_articulo,cantidad)
+values(3,6,8)
+
+
+
+GO
+CREATE PROCEDURE SP_PRODUCTO
+AS
+BEGIN
+SELECT *
+FROM ARTICULOS
+END
+
+GO
+CREATE PROCEDURE SP_FORMAS_PAGO
+AS
+BEGIN
+SELECT *
+FROM FORMAS_PAGO
+END
+
+GO
+CREATE PROCEDURE SP_NUEVA_FACTURA
+@NUEVA_FACTURA INT OUTPUT
+AS
+BEGIN
+SET @NUEVA_FACTURA = (SELECT MAX(NRO_FACTURA)+1  FROM FACTURAS);
+END
+
+GO
+--CREATE PROCEDURE SP_CARGAR_DETALLES
+--AS
+--BEGIN
+--SELECT F.NRO_FACTURA
+--FROM FACTURAS F
+--JOIN DETALLES_FACTURA DF ON DF.NRO_FACTURA = F.NRO_FACTURA
+--JOIN ARTICULOS A ON A.ID_ARTICULO = DF.ID_ARTICULO
+--JOIN FORMAS_PAGO FP ON FP.ID_FORMAPAGO = F.ID_FORMAPAGO
+--END
+
+CREATE PROCEDURE SP_INSERTAR_MAESTRO
+@NRO_FACTURA INT OUTPUT,
+@FORMA_PAGO INT,
+@CLIENTE VARCHAR (50)
+AS
+BEGIN
+INSERT INTO FACTURAS (FECHA,ID_FORMAPAGO,CLIENTE) VALUES(GETDATE(),@FORMA_PAGO,@CLIENTE)
+SET @NRO_FACTURA = SCOPE_IDENTITY()
+END
+
+
+CREATE PROC SP_INSERTAR_DETALLE
+@NRO_FACTURA INT,
+@DETALLE_NRO INT OUTPUT,
+@ID_ARTICULO INT,
+@CANTIDAD INT
+AS
+BEGIN
+INSERT INTO DETALLES_FACTURA (NRO_FACTURA, ID_ARTICULO, CANTIDAD) VALUES(@NRO_FACTURA, @ID_ARTICULO, @CANTIDAD)
+SET @DETALLE_NRO=SCOPE_IDENTITY()
+END
+
+
+
+SELECT *
+FROM	FACTURAS
+
